@@ -52,12 +52,7 @@ function thermal_add_template_slug($data, $post){
         $data = (array)$data;
         if ($slug == '') {
             $slug = 'default';
-        } else {
-            // do some cleaning of the slug to keep the template name alone
-            $slug = preg_replace("/^(.*)([\\w-_]*)(.php)$/uiUm", "$2", $slug);
-            // replace hyphens with underscores
-            $slug = str_replace('-', '_', $slug);
-        }
+        } 
         $data['template'] = $slug;
     }
     return (object)$data;
