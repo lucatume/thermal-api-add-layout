@@ -11,4 +11,4 @@ The plugin comes with no settings and requires no configuration aside for the ac
 
 ## Response
 The template information will be stored in the <code>template</code> key; if the default template is being used then <code>default</code> will be returned.  
-If another template is in use then the base name of the template file will be returned: the template file <code>templates/someTemplate.php</code> will return <code>someTemplate</code>.
+If another template is in use then the path of the template file will be returned: the template file <code>templates/someTemplate.php</code> will return <code>someTemplate</code>.
